@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form - Beautiful UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="form-container">
+            <h2>Sign Up Form</h2>
+            <form id="signup-form">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first_name" required>
+                <span class="error-message" id="first-name-error"></span>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last_name" required>
+                <span class="error-message" id="last-name-error"></span>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="email-error"></span>
+
+                <label for="phone">Phone Number:</label>
+                <input type="number" id="phone" name="phone_number" required>
+                <span class="error-message" id="phone-error"></span>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="8">
+                <span class="error-message" id="password-error"></span>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Popups for image and name -->
+    <div id="popup" class="hidden"></div>
+    <div id="image-popup" class="hidden">
+        <img id="popup-img" src="" alt="Popup Image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
